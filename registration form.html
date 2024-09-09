@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue" >
+    <center><h1>STUDENT REGISTRATION FORM</h1><hr>
+    <form>
+        <label><b>First Name:</b></label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="First name"
+        size="20"
+        required
+      /><br><br>
+      <lable><b>Last Name:</b></lable>
+      <input
+        type="text"
+        name="sname"
+        id="sname"
+        placeholder="Second name"
+        size="20"
+        required
+      />
+
+      <br /><br />
+      <label><b>Date Of Birth:</b></label>
+      <input type="date" name="dob" id="dob" required><br><br>
+      <label><b>Email Id:</b></label>
+      <input type="email" name="mail" id="mail" placeholder="xxxxxxxx@xxxxxxx"><br><br>
+      <lable><b>Passward:</b></lable>
+      <input type="password" name="password" id="myInput">
+        <pre>          <input type="checkbox" onclick="myFunction()">Show Password</pre>
+        
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+        <label><b>Mobile Number:</b></label>
+
+        <input
+          type="tel"
+          name="namber"
+          id="number"
+          pattern="[0-9]{4,10}"
+          placeholder="(000) 000-0000"
+          required
+        />
+        <br /><br />
+        <label><b>Gender:</b></label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="Femal">Female
+        <br><br>
+        <label><b> Address:</b></label><br>
+        <textarea rows="8" cols="40"></textarea><br><br>
+        <label><b>City:</b></label>
+      <input type="text" name="city" id="city" /><br><br>
+      <label><b>Pincode:</b></label>
+      <input type="text" name="pin" id="pin" /><br><br>
+      <label><b>State:</b></label>
+      <select>
+        <option name="Please select your state">Please select your state</option>
+        <option name="Andhra Pradesh">Andhra Pradesh</option>
+        <option name="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option name="Assam">Assam</option>
+        <option name="Bihar">Bihar</option>
+        <option name="Chhattisgarh">Chhattisgarh</option>
+        <option name="Delhi">delhi</option>
+        <option name="Goa">Goa</option>
+        <option name="Gujarat">Gujarat</option>
+        <option name="Haryana">Haryana</option>
+        <option name="Himachal Pradesh">Himachal Pradesh</option>
+        <option name="Jammu & Kashmir">Jammu & Kashmir</option>
+        <option name="Jharkhand">Jharkhand</option>
+        <option name="Karnataka">Karnataka</option>
+        <option name="Kerala">Kerala</option>
+        <option name="Maharashtra">Maharashtra</option>
+        <option name="Madhya Pradesh">Madhya Pradesh</option>
+        <option name="Manipur">Manipur</option>
+        <option name="Meghalaya">Meghalaya</option>
+        <option name="Mizoram">Mizoram</option>
+        <option name="Nagaland">Nagaland</option>
+        <option name="Odisha">Odisha</option>
+        <option name="Punjab">Punjab</option>
+        <option name="Rajasthan">Rajasthan</option>
+        <option name="Sikkim">Sikkim</option>
+        <option name="Tamil Nadu">Tamil Nadu</option>
+        <option name="Tripura">Tripura</option>
+        <option name="Telangana">Telangana</option>
+        <option name="Uttar Pradesh">Uttar Pradesh</option>
+        <option name="Uttarakhand">Uttarakhand</option>
+        <option name="West Bengal">West Bengal</option>
+    </select><br><br>
+    <label><b>Country:</b></label>
+      <input type="text" name="country" id="country" /><br><br>
+      <label><b>Hobbies:</b></label>
+      <input type="checkbox" id="Hobby1" name="Hobby1" value="Playing cricket">
+  <label for="Hobby1">Playing</label>
+  <input type="checkbox" id="Hobby2" name="Hobby2" value="Dancing">
+  <label for="Hobby2">Dancing</label>
+  <input type="checkbox" id="Hobby3" name="Hobby3" value="Singing">
+  <label for="Hobby3">Singing</label>
+  <input type="checkbox" id="Hobby4" name="Hobby4" value="Cooking">
+  <label for="Hobby4">Cooking</label><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" value="Reset">
+    </form>
+    </center>
+
+
+    
+</body>
+</html>
